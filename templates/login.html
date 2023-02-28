@@ -2,9 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>carmen</title>
 </head>
 <body>
+<form action="" method="POST">
+
+    {% csrf_token %}
+    {{ reg_members_form.as_p }}
+    <input  type="submit" name = "members" value="register Member">
+
+
+</form>
+
+/div>
+{% if submit_button == "register Members" %}
+    {{ name }}
+    {{ age }}
+    {{ phone }}
+    {{ city }}
+    {{ country }}
+{% endif %}
+
+
+
 
 </body>
 </html>
